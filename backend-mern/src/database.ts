@@ -2,6 +2,7 @@ import { MongoClient } from 'mongodb';
 import config from './config/config';
 
 const connectionString = config.DB.URI;
+console.log(connectionString);
 const client = new MongoClient(connectionString);
 
 async function connectionToDatabase(){
