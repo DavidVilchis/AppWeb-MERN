@@ -34,7 +34,7 @@ const RegisterForm = () => {
                 'Accept': 'application/json'
             }
             await axios.post(
-                "http://localhost:3000/signup",
+                "https://backend-mern-2id3.onrender.com/signup",
                 data,
                 { headers: headersConfig }
             ).then(response => {

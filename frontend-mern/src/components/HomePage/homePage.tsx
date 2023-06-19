@@ -57,7 +57,7 @@ const HomePage = () => {
         }
         await axios({
             method: 'post',
-            url: 'http://localhost:3000/allTasks',
+            url: 'https://backend-mern-2id3.onrender.com/allTasks',
             data: { email: userJson.email },
             headers: headersConfig
         }).then(response => {
@@ -103,7 +103,7 @@ const HomePage = () => {
                     }
                     await axios({
                         method: 'post',
-                        url: 'http://localhost:3000/deleteTask',
+                        url: 'https://backend-mern-2id3.onrender.com/deleteTask',
                         data: { id: props._id, email: userJson.email },
                         headers: headersConfig
                     }).then(response => {
@@ -206,7 +206,7 @@ const HomePage = () => {
                 }
                 await axios({
                     method: 'post',
-                    url: 'http://localhost:3000/updateTask',
+                    url: 'https://backend-mern-2id3.onrender.com/updateTask',
                     data: data,
                     headers: headersConfig
                 }).then(response => {
@@ -312,7 +312,7 @@ const HomePage = () => {
                 }
                 await axios({
                     method: 'post',
-                    url: 'http://localhost:3000/newTask',
+                    url: 'https://backend-mern-2id3.onrender.com/newTask',
                     data: data,
                     headers: headersConfig
                 }).then(response => {

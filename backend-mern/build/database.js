@@ -15,7 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mongodb_1 = require("mongodb");
 const config_1 = __importDefault(require("./config/config"));
 const connectionString = config_1.default.DB.URI;
-console.log(connectionString);
 const client = new mongodb_1.MongoClient(connectionString);
 function connectionToDatabase() {
     return __awaiter(this, void 0, void 0, function* () {
